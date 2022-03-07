@@ -3,6 +3,6 @@ module.exports = ({ env }) => ({
   port: env.int('PORT', 1337),
   url: 'https://strapi4version.newweb.tngwebsolutions.ca/',
   app: {
-    keys: env.array('APP_KEYS'),
+    keys: env.array("APP_KEYS", ["testKey1", "testKey2"]),
   },
 });
